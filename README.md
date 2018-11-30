@@ -13,8 +13,11 @@
 3) 程式碼抓回去後，參考一下 [這篇文章](https://devcenter.heroku.com/articles/git) ， 會出問題的步驟不外乎…
 
 a. 沒有 heroku create 建立 app，或 heroku git:remote -a project 使用已存在的 app (原app會被刪掉喔，請小心服用)
+
 b. 沒有 heroku addons:create 配置資料庫。這在 https://dashboard.heroku.com/apps/ 有 UI 可用
+
 c. 沒有設定 FLASK_CONFIG 環境變數為 heroku
+
 d. git push heroku master 後記得執行 heroku run flask deploy 來初始化資料庫
 
 Flasky
