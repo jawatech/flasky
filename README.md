@@ -12,7 +12,7 @@
 
 3) 程式碼抓回去後，參考一下 [這篇文章](https://devcenter.heroku.com/articles/git) ， 會出問題的步驟不外乎…
 
-a. 沒有 heroku create 建立 app，或 heroku git:remote -a project 使用已存在的 app (原app會被刪掉喔，請小心服用)
+a. 沒有 heroku create 建立 app，或 heroku git:remote -a project 使用已存在的 app (原app會被刪掉喔，請小心服用)；還要 heroku config:set FLASK_APP=flasky.py
 
 b. 沒有 heroku addons:create 配置資料庫。這在 https://dashboard.heroku.com/apps/ 有 UI 可用
 
