@@ -16,7 +16,7 @@ a. 沒有 heroku create 建立 app，或 heroku git:remote -a project 使用已�
 
 b. 沒有 heroku addons:create 配置資料庫。這在 https://dashboard.heroku.com/apps/ 有 UI 可用
 
-c. 沒有設定 FLASK_CONFIG 環境變數為 heroku
+c. 沒有設定 FLASK_CONFIG 環境變數為 heroku => heroku config:set FLASK_CONFIG=heroku
 
 d. git push heroku master 後記得執行 heroku run flask deploy 來初始化資料庫
 
